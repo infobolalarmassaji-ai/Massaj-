@@ -155,6 +155,9 @@ async def init_db():
 
         # Ish vaqtini Dushanba - Shanba: 09:00 - 17:00 ga sinxronlash
         await db.execute("UPDATE branches SET working_hours = 'Dushanba - Shanba: 09:00 - 17:00'")
+        # Telegram mas'ul xodimni @Rixsiyeva81 ga yangilash
+        await db.execute("UPDATE branches SET telegram_username = '@Rixsiyeva81' WHERE telegram_username = '@Nazokat79_Admin' OR telegram_username IS NULL")
+        await db.execute("UPDATE branches SET address = 'Olmazor tumani, Keles yo''li ko''chasi, 2-uy' WHERE id = 9")
 
         await db.commit()
 

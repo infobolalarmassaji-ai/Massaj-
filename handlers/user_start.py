@@ -34,7 +34,7 @@ async def cmd_start(message: Message, state: FSMContext):
         f"Nazokat Mirsobitovnaning bolalar massaji rasmiy telegram botiga xush kelibsiz\n\n"
         f"“Bolalar Massaji Nazokat79” — bolalar salomatligi va rivojlanishiga e’tibor qaratadigan, "
         f"Toshkent shahri bo‘ylab faoliyat yurituvchi bolalar massaji markazlari tarmog‘i.\n\n"
-        f"Bugungi kunda filiallarimiz shahar bo‘ylab 13 ta qulay va yaxshi joylashgan lokatsiyada faoliyat yuritadi. "
+        f"Bugungi kunda filiallarimiz shahar bo‘ylab 12 ta qulay va yaxshi joylashgan lokatsiyada faoliyat yuritadi. "
         f"Sizga eng yaqin filialimizni tanlab, farzandingiz uchun qulay sharoitda xizmat olishingiz mumkin.\n\n"
         f"Markazimiz rahbari — Nazokat Mirsobitovna, vrach-osteopat va Yumeiho terapevt.\n\n"
         f"Ular A. Andreanov nomidagi Osteopatiya institutini tamomlagan bo‘lib, bolalar bilan ishlash sohasida 27 yillik tajribaga ega.\n\n"
@@ -141,7 +141,7 @@ async def contact_us(message: Message):
     text = (
         "📞 <b>«Bolalar Massaji Nazokat79» Markazi Aloqa Ma'lumotlari:</b>\n\n"
         "🏢 <b>Yagona Call-Markaz:</b>\n"
-        "☎️ +998 90 1748284\n\n\n"
+        "☎️ +998 90 174 82 84\n\n\n"
         "🕒 <b>Ish tartibi:</b>\n"
         "• Dushanbadan-Shambigacha: 09:00 dan 17:00 gacha\n\n"
         "(Yakshanba — dam olish kuni)\n\n"

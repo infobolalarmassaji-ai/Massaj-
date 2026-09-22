@@ -1,4 +1,4 @@
-# 👶 Bolalar Massaji Telegram Boti («Bolajon Shifo»)
+# 👶 Bolalar Massaji Telegram Boti («Bolalar Massaji Nazokat79»)
 
 Bolalar massaji markazi uchun ishlab chiqilgan, qulay, sodda va tez ishlovchi professional Telegram bot.
 

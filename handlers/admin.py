@@ -88,7 +88,7 @@ async def on_bot_added_to_group(message: Message):
         if member.id == bot_info.id:
             await message.answer(
                 f"👋 <b>Assalomu alaykum!</b>\n\n"
-                f"<b>«Bolajon Shifo»</b> boti guruhga muvaffaqiyatli qo'shildi.\n"
+                f"<b>«Bolalar Massaji Nazokat79»</b> boti guruhga muvaffaqiyatli qo'shildi.\n"
                 f"🆔 <b>Ushbu guruh ID raqami:</b> <code>{message.chat.id}</code>\n\n"
                 f"✅ Endi mijozlar qoldirgan barcha arizalar shu yerga to'g'ridan-to'g'ri kelib tushadi!",
                 parse_mode="HTML"
@@ -108,12 +108,12 @@ async def cmd_admin_panel(message: Message, state: FSMContext):
     app_cnt = await get_appointments_count()
     
     panel_text = (
-        "⚙️ <b>«Bolajon Shifo» Boshqaruv Paneli (Admin)</b>\n"
+        "⚙️ <b>«Bolalar Massaji Nazokat79» Boshqaruv Paneli (Admin)</b>\n"
         "━━━━━━━━━━━━━━━━━━━━\n"
         f"👥 <b>Foydalanuvchilar:</b> {users_cnt} nafar\n"
         f"📋 <b>Jami arizalar:</b> {app_cnt} ta\n"
         "━━━━━━━━━━━━━━━━━━━━\n\n"
-        "Ushbu bo me'yorda filiallar lokatsiyasi, telefon raqamlari, "
+        "Ushbu bo'limda filiallar lokatsiyasi, telefon raqamlari, "
         "yangiliklar va arizalarni tahrirlashingiz mumkin:\n"
         "👇 Kerakli bo'limni tanlang:"
     )
@@ -133,7 +133,7 @@ async def back_to_admin_main(callback: CallbackQuery, state: FSMContext):
     app_cnt = await get_appointments_count()
     
     panel_text = (
-        "⚙️ <b>«Bolajon Shifo» Boshqaruv Paneli (Admin)</b>\n"
+        "⚙️ <b>«Bolalar Massaji Nazokat79» Boshqaruv Paneli (Admin)</b>\n"
         "━━━━━━━━━━━━━━━━━━━━\n"
         f"👥 <b>Foydalanuvchilar:</b> {users_cnt} nafar\n"
         f"📋 <b>Jami arizalar:</b> {app_cnt} ta\n"
@@ -475,7 +475,7 @@ async def confirm_appointment_cb(callback: CallbackQuery):
     manager_name = f"@{callback.from_user.username}" if callback.from_user.username else callback.from_user.full_name
     
     await callback.message.edit_text(
-        callback.message.text + f"\n\n🟢 <b>HOLAT: TASDIQLANDI (Mas'ul: {manager_name})</b>",
+        f"{callback.message.html_text}\n\n🟢 <b>HOLAT: TASDIQLANDI (Mas'ul: {manager_name})</b>",
         parse_mode="HTML"
     )
     
@@ -509,7 +509,7 @@ async def reject_appointment_cb(callback: CallbackQuery):
     manager_name = f"@{callback.from_user.username}" if callback.from_user.username else callback.from_user.full_name
     
     await callback.message.edit_text(
-        callback.message.text + f"\n\n🔴 <b>HOLAT: RAD ETILDI (Mas'ul: {manager_name})</b>",
+        f"{callback.message.html_text}\n\n🔴 <b>HOLAT: RAD ETILDI (Mas'ul: {manager_name})</b>",
         parse_mode="HTML"
     )
     

@@ -113,7 +113,7 @@ INITIAL_BRANCHES = [
     {
         "district": "Olmazor tumani",
         "name": "Olmazor (Keles yo'li) filiali",
-        "address": "Olmazor tumani, Keles yo‘li ko'chasi, 2-uy",
+        "address": "Olmazor tumani, Keles yo'li ko'chasi, 2-uy",
         "landmark": "Qoraqamish shlagbaum (shlamba), Keles yo'li 2",
         "phone": "+998 97 747 41 31",
         "working_hours": "Dushanba - Shanba: 09:00 - 17:00",
@@ -207,85 +207,85 @@ INITIAL_SERVICES = [
 
 INITIAL_SPECIALISTS = [
     {
-        "branch_name": "Yunusobod 'Shifo Bolajon' filiali",
+        "branch_name": "Yunusobod filiali",
         "full_name": "Nargiza Rahimova",
         "speciality": "Oliy toifali bolalar massajisti, pediatr-reabilitolog",
         "experience": "12 yil"
     },
     {
-        "branch_name": "Yunusobod 'Shifo Bolajon' filiali",
+        "branch_name": "Yunusobod filiali",
         "full_name": "Azizbek Karimov",
         "speciality": "Bolalar ortopedik massajisti, kinezoterapiya mutaxassisi",
         "experience": "8 yil"
     },
     {
-        "branch_name": "Chilonzor 'Mehrli Qo'llar' filiali",
+        "branch_name": "Farxadskiy filiali",
         "full_name": "Dilnoza Usmanova",
         "speciality": "Chaqaloqlar massaji va erta rivojlanish mutaxassisi",
         "experience": "10 yil"
     },
     {
-        "branch_name": "Chilonzor 'Mehrli Qo'llar' filiali",
+        "branch_name": "Farxadskiy filiali",
         "full_name": "Shahnoza Alimova",
         "speciality": "Bolalar nevrologik massaji bo'yicha mutaxassis",
         "experience": "9 yil"
     },
     {
-        "branch_name": "Mirzo Ulug'bek 'Sog'lom Avlod' filiali",
+        "branch_name": "Qushbegi filiali",
         "full_name": "Malika Yusupova",
         "speciality": "Bolalar massajisti, LFK instruktori",
         "experience": "7 yil"
     },
     {
-        "branch_name": "Yakkasaroy 'Bolalar Qadami' filiali",
+        "branch_name": "Sergeli filiali",
         "full_name": "Ziyoda Ahmedova",
         "speciality": "Ortopedik va profilaktik massaj mutaxassisi",
         "experience": "11 yil"
     },
     {
-        "branch_name": "Mirobod 'Tabassum' filiali",
+        "branch_name": "Mirzo Ulug'bek (Qorasuv) filiali",
         "full_name": "Feruza Xoliqova",
         "speciality": "Oliy toifali chaqaloqlar massajisti",
         "experience": "14 yil"
     },
     {
-        "branch_name": "Shayxontohur 'Chorsu Shifo' filiali",
+        "branch_name": "Yashnobod (Kadisheva) filiali",
         "full_name": "Nilufar Qodirova",
         "speciality": "Pediatrik reabilitatsiya va massaj bo'yicha ekspert",
         "experience": "8 yil"
     },
     {
-        "branch_name": "Olmazor 'Nihol' filiali",
+        "branch_name": "Shtab (Gulzor) filiali",
         "full_name": "Gulhayo Sobirova",
         "speciality": "Bolalar davolovchi massajisti",
         "experience": "6 yil"
     },
     {
-        "branch_name": "Uchtepa 'Kichkintoy' filiali",
+        "branch_name": "Izza filiali",
         "full_name": "Madina Ergasheva",
         "speciality": "Bolalar massaji va gimnastikasi mutaxassisi",
         "experience": "9 yil"
     },
     {
-        "branch_name": "Yashnobod 'Orasta Shifo' filiali",
+        "branch_name": "Olmazor (Keles yo'li) filiali",
         "full_name": "Zuhra Tursunova",
         "speciality": "Chaqaloqlar va yosh bolalar massajisti",
         "experience": "10 yil"
     },
     {
-        "branch_name": "Sergeli 'Yoshlik' filiali",
+        "branch_name": "Sebzor filiali",
         "full_name": "Umida Ismoilova",
         "speciality": "Bolalar qad-qomatini tiklash va massaj mutaxassisi",
         "experience": "7 yil"
     },
     {
-        "branch_name": "Bektemir 'Nurafshon' filiali",
+        "branch_name": "Ibn Sino filiali",
         "full_name": "Kamola Mirzayeva",
         "speciality": "Profilaktik va davolovchi massaj mutaxassisi",
         "experience": "5 yil"
     },
     {
-        "branch_name": "Yangihayot 'Sog'lom Qadam' filiali",
+        "branch_name": "Chirchiq filiali",
         "full_name": "Munisa Abdullayeva",
         "speciality": "Chaqaloqlar massaji va displaziya bo'yicha mutaxassis",
         "experience": "8 yil"
