@@ -38,7 +38,11 @@ if group_id_raw and group_id_raw.lstrip("-").isdigit():
     GROUP_ID = int(group_id_raw)
 
 DB_NAME = get_env_any_case("DB_NAME", "db_name", default="massage_bot.db")
-DB_PATH = BASE_DIR / DB_NAME
+DB_DIR_ENV = get_env_any_case("DB_DIR", "db_dir")
+if DB_DIR_ENV:
+    DB_PATH = Path(DB_DIR_ENV) / DB_NAME
+else:
+    DB_PATH = BASE_DIR / DB_NAME
 
 # Google Calendar sozlamalari
 GOOGLE_CALENDAR_ID = get_env_any_case("GOOGLE_CALENDAR_ID", "google_calendar_id")

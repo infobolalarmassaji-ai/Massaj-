@@ -59,11 +59,14 @@ def is_admin(user_id_or_event, chat_id: int = None) -> bool:
     return False
 
 def can_manage_appointment(callback: CallbackQuery) -> bool:
-    """Arizani tasdiqlash/rad etish huquqini tekshirish (admin yoki guruh a'zosi)"""
-    if is_admin(callback.from_user.id):
+    """Arizani tasdiqlash/rad etish huquqini tekshirish (admin yoki aniq guruh a'zosi)"""
+    if callback.from_user.id in ADMIN_IDS:
         return True
-    if callback.message and callback.message.chat.type in ("group", "supergroup"):
-        return True
+    if GROUP_ID and callback.message and callback.message.chat:
+        raw_group = str(abs(GROUP_ID))
+        raw_chat = str(abs(callback.message.chat.id))
+        if raw_chat == raw_group or raw_chat.endswith(raw_group):
+            return True
     return False
 
 @router.message(Command("id"))

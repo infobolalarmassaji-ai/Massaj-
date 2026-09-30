@@ -28,7 +28,7 @@ async def show_massage_course_info(message: Message):
         "🌸 <b>Bolalar Massaji Kursi</b> 🌸\n"
         "━━━━━━━━━━━━━━━━━━━━\n\n"
         "📚 <b>Kurs davomiyligi:</b> 1 oy\n"
-        "📅 <b>Dars kunlari:</b> Seshanba – Shanba\n"
+        "📅 <b>Dars kunlari:</b> Haftada 6 kun (Dushanba – Shanba)\n"
         "⏰ <b>Vaqt:</b> 10:00 – 13:00\n"
         "📍 <b>Manzil:</b> Qushbegi 10A filiali\n\n"
         "✨ <b>Kurs dasturiga quyidagilar kiradi:</b>\n\n"
