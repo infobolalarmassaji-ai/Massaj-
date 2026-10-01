@@ -155,20 +155,32 @@ async def init_db():
 
         # Ish vaqtini Dushanba - Shanba: 09:00 - 17:00 ga sinxronlash
         await db.execute("UPDATE branches SET working_hours = 'Dushanba - Shanba: 09:00 - 17:00'")
-        # Telegram mas'ul xodimni @Rixsiyeva81 ga yangilash
-        await db.execute("UPDATE branches SET telegram_username = '@Rixsiyeva81'")
 
-        # --- Aniq ID bo'yicha migratsiya (ishonchli) ---
-        # Yunusobod filiali (ID=1): telefon raqami
-        await db.execute("UPDATE branches SET phone = '+998 97 747 41 31' WHERE id = 1")
-        # Sergeli filiali (ID=4): manzil va orientir
-        await db.execute("UPDATE branches SET address = 'Mehrigiyo ko''chasi, 7A-uy', landmark = 'Mehrigiyo ko''chasi 7A' WHERE id = 4")
-        # Ibn Sino filiali (ID=11): orientir (Bek Osiyo)
-        await db.execute("UPDATE branches SET address = 'Beltepa ko''chasi, 40-uy', landmark = 'Yandeksda: Beltepa 40. Orientir: Bek Osiyo' WHERE id = 11")
-        # Olmazor filiali (ID=9): manzil
-        await db.execute("UPDATE branches SET address = 'Keles yo''li ko''chasi, 2-uy', landmark = 'Qoraqamish shlagbaum (shlamba)' WHERE id = 9")
+        # --- Nom bo'yicha migratsiya (Railway uchun ishonchli) ---
+        # Yunusobod filiali: telefon raqami
+        await db.execute(
+            "UPDATE branches SET phone = '+998 97 747 41 31' WHERE name = 'Yunusobod filiali'"
+        )
+        # Sergeli filiali: manzil va orientir
+        await db.execute(
+            "UPDATE branches SET address = 'Mehrigiyo ko''chasi, 7A-uy', "
+            "landmark = 'Mehrigiyo ko''chasi 7A' WHERE name = 'Sergeli filiali'"
+        )
+        # Ibn Sino filiali: manzil va orientir (Bek Osiyo)
+        await db.execute(
+            "UPDATE branches SET address = 'Ibn Sino-1 mavzesi, Jarariq ko''chasi', "
+            "landmark = 'Yandeksda: Beltepa 40 bo''lib chiqadi. Orientir: Bek Osiyo' "
+            "WHERE name = 'Ibn Sino filiali'"
+        )
+        # Olmazor filiali: manzil
+        await db.execute(
+            "UPDATE branches SET address = 'Olmazor tumani, Keles yo''li ko''chasi, 2-uy', "
+            "landmark = 'Qoraqamish shlagbaum (shlamba), Keles yo''li 2' "
+            "WHERE name = 'Olmazor (Keles yo''li) filiali'"
+        )
 
         await db.commit()
+        logger.info("Filiallar ma'lumotlari yangilandi (migration OK).")
 
         # Dastlabki ma'lumotlarni tekshirish va to'ldirish
         cursor = await db.execute("SELECT COUNT(*) as count FROM districts")

@@ -55,7 +55,7 @@ INITIAL_BRANCHES = [
         "name": "Sergeli filiali",
         "address": "Mehrigiyo ko'chasi, 7A-uy",
         "landmark": "Mehrigiyo ko'chasi 7A",
-        "phone": "+998 97 737 41 31",
+        "phone": "+998 97 747 41 31",
         "working_hours": "Dushanba - Shanba: 09:00 - 17:00",
         "latitude": 41.225269,
         "longitude": 69.217959,
