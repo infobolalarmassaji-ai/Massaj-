@@ -158,6 +158,11 @@ async def init_db():
         # Telegram mas'ul xodimni @Rixsiyeva81 ga yangilash
         await db.execute("UPDATE branches SET telegram_username = '@Rixsiyeva81' WHERE telegram_username = '@Nazokat79_Admin' OR telegram_username IS NULL")
         await db.execute("UPDATE branches SET address = 'Olmazor tumani, Keles yo''li ko''chasi, 2-uy' WHERE id = 9")
+        
+        # Yangi ma'lumotlar migratsiyasi
+        await db.execute("UPDATE branches SET phone = '+998 97 747 41 31' WHERE name = 'Yunusobod filiali'")
+        await db.execute("UPDATE branches SET address = 'Mehrigiyo ko''chasi, 7A-uy', landmark = 'Mehrigiyo ko''chasi 7A' WHERE name = 'Sergeli filiali'")
+        await db.execute("UPDATE branches SET landmark = 'Yandeksda: Beltepa 40 bo''lib chiqadi. Orientir: Bek Osiyo' WHERE name = 'Ibn Sino filiali'")
 
         await db.commit()
 
